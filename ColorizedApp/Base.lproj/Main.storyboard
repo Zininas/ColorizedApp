@@ -97,7 +97,7 @@
                                                             <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="ba2-1W-tVZ"/>
                                                         </connections>
                                                     </slider>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MpE-vS-Jbd">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.48999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MpE-vS-Jbd">
                                                         <rect key="frame" x="-2" y="92.5" width="431" height="28.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <connections>

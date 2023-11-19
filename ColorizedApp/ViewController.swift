@@ -26,6 +26,7 @@ final class ViewController: UIViewController {
         redSliderLabel.text = (round((redSlider.value) * 100 ) / 100).formatted()
         greenSliderLabel.text = (round((greenSlider.value) * 100 ) / 100).formatted()
         blueSliderLabel.text = (round((blueSlider.value) * 100 ) / 100).formatted()
+        multicoloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     @IBAction func redSliderAction() {
         redSliderLabel.text = (round((redSlider.value) * 100 ) / 100).formatted()

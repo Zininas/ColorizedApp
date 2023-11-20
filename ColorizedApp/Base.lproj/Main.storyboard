@@ -87,21 +87,21 @@
                                                         <rect key="frame" x="-2" y="0.0" width="431" height="28.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <connections>
-                                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="BFi-BQ-um6"/>
+                                                            <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="BFi-BQ-um6"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.27000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-oe-zmd">
                                                         <rect key="frame" x="-2" y="46.5" width="431" height="28"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <connections>
-                                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="ba2-1W-tVZ"/>
+                                                            <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="GVM-1X-Qx7"/>
                                                         </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.48999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MpE-vS-Jbd">
                                                         <rect key="frame" x="-2" y="92.5" width="431" height="28.5"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <connections>
-                                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="0Vu-jR-WC0"/>
+                                                            <action selector="slidersAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Una-2r-f5T"/>
                                                         </connections>
                                                     </slider>
                                                 </subviews>

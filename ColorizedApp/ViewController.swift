@@ -8,7 +8,7 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
+    
     @IBOutlet weak var multicoloredView: UIView!
     
     @IBOutlet weak var redSliderLabel: UILabel!
@@ -21,24 +21,29 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupSliders()
+        setupMulticoloredView()
+    }
+    
+    private func setupMulticoloredView() {
         multicoloredView.layer.cornerRadius = 15
-        redSliderLabel.text = (round((redSlider.value) * 100 ) / 100).formatted()
-        greenSliderLabel.text = (round((greenSlider.value) * 100 ) / 100).formatted()
-        blueSliderLabel.text = (round((blueSlider.value) * 100 ) / 100).formatted()
-        multicoloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        multicoloredView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
     }
-    @IBAction func redSliderAction() {
-        redSliderLabel.text = (round((redSlider.value) * 100 ) / 100).formatted()
-        multicoloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    
+    private func setupSliders() {
+        redSliderLabel.text = String(format: "%.2f", redSlider.value)
+        greenSliderLabel.text = String(format: "%.2f", greenSlider.value)
+        blueSliderLabel.text = String(format: "%.2f", blueSlider.value)
     }
-    @IBAction func greenSliderAction() {
-        greenSliderLabel.text = (round((greenSlider.value) * 100 ) / 100).formatted()
-        multicoloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-    }
-    @IBAction func blueSliderAction() {
-        blueSliderLabel.text = (round((blueSlider.value) * 100 ) / 100).formatted()
-        multicoloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+    
+    @IBAction func slidersAction() {
+        setupSliders()
+        setupMulticoloredView()
     }
 }
 
